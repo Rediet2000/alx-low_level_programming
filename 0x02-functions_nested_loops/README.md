@@ -1,2 +1,1 @@
-#functions and nested loops
-Its all about functions and loops within loops,coding the computer to the metal.
+My taskes for 0x02-functions_nested_loops
