@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "puthchar.h"
 /**
  *main - entry point
  *
@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char holbText[9] = "Holberton";
+	char holbText[9] = "Puthchar";
 	int i;
 
 	for (i = 0; i < 9; i++)
@@ -19,3 +19,4 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
+
