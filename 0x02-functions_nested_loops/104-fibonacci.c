@@ -8,18 +8,44 @@
  *
  */
 int main(void)
-{
-	long int i, t1 = 1, t2 = 2, sum = 0;
-
-	for (i = 1; i < 98; i++)
+{       
+	int count;
+	unsigned long i, j, k;
+	unsigned long m, n, p, carry;
+	
+	count = 0;
+	i = 0;
+	j = 1;
+     	for (count =1; count <=91; count++)
+ 
 	{
-		printf("%ld, ", t1);
-		sum = t1 + t2;
-		t1 = t2;
-		t2 = sum;
-		if (i == 97)
-		{
-			printf("%ld\n", t1);
-		}
+		k = i +j;
+		i = j;
+		j = k;
+ 		printf("%lu, ", k);	
 	}
-}
+	m = i % 1000;
+	i = i / 1000;
+	n = j % 1000;
+	j = j / 1000;
+	while (count <= 98)
+        { 
+		carry = (m + n) / 1000;
+		p = (m + n) - carry * 1000;
+		k = (i + j) +carry;
+ 		m = n;
+		n = p;
+		i = j;
+		j = k;
+		if (p >= 100)
+			printf("%lu%lu", k, p);
+		else 
+			printf("%lu%lu", k, p);
+		if (count != 98)
+			printf(", ");
+		count++;
+	 }
+	putchar('\n');
+	return (0);
+}              
+
