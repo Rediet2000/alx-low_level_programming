@@ -5,7 +5,7 @@
  *@c:input
  *
  *Return:1 - uppercase,0 - otherwise
- *
+ **
  */
 int _isupper(int c)
 {
